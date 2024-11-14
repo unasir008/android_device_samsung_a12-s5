@@ -30,7 +30,7 @@ on:
       DEVICE_TREE:
         description: 'Device Tree'
         required: true
-        default: 'https://github.com/TDD788/A12s-DevTree'
+        default: 'https://github.com/unasir008/android_device_samsung_a12-s5'
       DEVICE_TREE_BRANCH:
         description: 'Device Tree Branch'
         required: true
