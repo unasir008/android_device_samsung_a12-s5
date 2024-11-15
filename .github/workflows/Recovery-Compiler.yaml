@@ -34,15 +34,15 @@ on:
       DEVICE_TREE_BRANCH:
         description: 'Device Tree Branch'
         required: true
-        default: 'DT-Builder'
+        default: 'A125FXXS5CXE3'
       DEVICE_PATH:
         description: 'Specify your Device Path'
         required: true
-        default: 'device/samsung/a12s'
+        default: 'device/samsung/a12'
       DEVICE_NAME:
         description: 'Specify your Device Codename'
         required: true
-        default: 'a12s'
+        default: 'a12'
       KERNEL:
         description: 'Add kernel Source'
         required: false
