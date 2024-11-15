@@ -134,8 +134,8 @@ jobs:
       run: |
         mkdir -p ${GITHUB_WORKSPACE}/OrangeFox
         cd ${GITHUB_WORKSPACE}/OrangeFox
-        git config --global user.name "TheDarkDeath788"
-        git config --global user.email "thedarkdeath788@gmail.com"
+        git config --global user.name "unasir008"
+        git config --global user.email "unasir008us@gmail.com"
         git clone https://gitlab.com/OrangeFox/sync.git -b master
         cd sync
         ./orangefox_sync.sh --branch ${{ github.event.inputs.MANIFEST }} --path ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST }}
@@ -160,6 +160,7 @@ jobs:
     - name: Building OrangeFox
       run: |
         cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST }}
+        chmod a+x device/samsung/a12/mkbootimg
         set +e
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
