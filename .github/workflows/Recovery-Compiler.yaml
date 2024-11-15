@@ -160,7 +160,6 @@ jobs:
     - name: Building OrangeFox
       run: |
         cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST }}
-        chmod a+x device/samsung/a12/mkbootimg
         set +e
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
